@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "334067108952",
+    "project_id": "ge400-mobile-app",
+    "storage_bucket": "ge400-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334067108952:android:83eca36f437cc30a008e2d",
+        "android_client_info": {
+          "package_name": "com.example.ge400mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334067108952-aubqc2efbq38d4v775kionbt13snhe90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXENVEpU53O4G4BivxA_KH2LS6xwOZbe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334067108952-aubqc2efbq38d4v775kionbt13snhe90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

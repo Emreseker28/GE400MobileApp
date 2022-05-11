@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ge400mobileapp/HomePage.dart';
 import 'package:ge400mobileapp/login.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 void main() {
   runApp(const MyApp());
