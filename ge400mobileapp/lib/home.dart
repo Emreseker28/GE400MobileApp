@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: Text("Khas Student Portal"),
+        title: Text("KHAS Student Portal"),
       ),
       body: Container(),
     );
