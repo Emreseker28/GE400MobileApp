@@ -8,6 +8,7 @@ import 'package:path/path.dart';
 import 'api/firebase_api.dart';
 
 class fileUpload extends StatefulWidget {
+  const fileUpload({ Key? key }) : super(key: key);
   @override
   _fileUploadState createState() => _fileUploadState();
 }
@@ -22,7 +23,8 @@ class _fileUploadState extends State<fileUpload> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('KHAS Student Portal'),
+        title: const Text('KHAS Student Portal'),
+        automaticallyImplyLeading: false,
         centerTitle: true,
       ),
       body: Container(

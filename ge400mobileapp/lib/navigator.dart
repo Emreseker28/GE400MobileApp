@@ -1,9 +1,8 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:ge400mobileapp/forum.dart';
-import 'package:ge400mobileapp/group.dart';
+import 'package:ge400mobileapp/storage.dart';
 import 'package:ge400mobileapp/home.dart';
 import 'package:ge400mobileapp/login.dart';
+import 'fileUpload.dart';
 
 
 
@@ -20,9 +19,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
   Widget build(BuildContext context) {
      const List<Widget> _pages = <Widget>[
  HomeScreen(),
-
- GroupScreen(),
- ForumScreen(),
+ StorageScreen(),
+ fileUpload(),
   
    Icon(
     Icons.chat,
@@ -46,13 +44,13 @@ class _NavigationScreenState extends State<NavigationScreen> {
          
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.people),
-          label: 'Group',
+          icon: Icon(Icons.wb_cloudy_rounded),
+          label: 'Storage',
          
         ),
          BottomNavigationBarItem(
-          icon: Icon(Icons.newspaper),
-          label: 'Forum',
+          icon: Icon(Icons.file_upload),
+          label: 'Upload',
          
         ),
          BottomNavigationBarItem(

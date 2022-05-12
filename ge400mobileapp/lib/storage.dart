@@ -5,23 +5,20 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
-class GroupScreen extends StatefulWidget {
-  const GroupScreen({ Key? key }) : super(key: key);
+class StorageScreen extends StatefulWidget {
+  const StorageScreen({ Key? key }) : super(key: key);
 
   @override
-  _GroupScreenState createState() => _GroupScreenState();
+  _StorageScreenState createState() => _StorageScreenState();
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
-        centerTitle: true,
         title: Text("Khas Student Portal"),
       ),
-      body: Container(),
     );
   }
 }
-class _GroupScreenState extends State<GroupScreen> {
+class _StorageScreenState extends State<StorageScreen> {
   late Future<ListResult> futureFiles;
   Map<int, double> downloadProgress = {};
   @override
@@ -67,7 +64,7 @@ class _GroupScreenState extends State<GroupScreen> {
               }
           );
         }else if(snapshot.hasError){
-          return const Center(child: Text('Error occured'),);
+          return const Center(child: Text('Error occurred'),);
         }else{
           return const Center(child: CircularProgressIndicator(),);
         }
