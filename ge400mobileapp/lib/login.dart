@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ge400mobileapp/HomePage.dart';
@@ -7,6 +8,7 @@ import 'package:ge400mobileapp/widgets/textfield_widget.dart';
 import 'package:provider/provider.dart';
 
 import 'home.dart';
+import 'main.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -70,10 +72,11 @@ class _LoginState extends State<Login> {
               ),
               InkWell(
                 onTap: () {
-                  print("asdas");
-                  print(mailController.text);
-                  print(password.text);
-                  if (mailController.text == "test@stu.khas.edu.tr" &&
+                  //print("asdas");
+                  //print(mailController.text);
+                  //print(password.text);
+                  signIn();
+                  if (mailController.text != "" &&
                       password.text != "") {
                     Navigator.push(
                       context,
@@ -95,5 +98,21 @@ class _LoginState extends State<Login> {
         ),
       ),
     );
+  }
+  Future signIn() async {
+    //showDialog(
+   //     context: context,
+    //    barrierDismissible: false,
+    //    builder: (context) => Center(child: CircularProgressIndicator()),
+    //);
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: mailController.text.trim(),
+        password: password.text.trim(),
+      );
+    } on FirebaseAuthException catch(e){
+      print(e);
+    }
+    //navigatorKey.currentState!.popUntil((route) => route.isFirst);
   }
 }

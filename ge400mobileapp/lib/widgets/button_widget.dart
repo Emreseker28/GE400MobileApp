@@ -6,7 +6,7 @@ class ButtonWidget extends StatelessWidget {
 
   ButtonWidget({
     this.title,
-    this.hasBorder,
+    this.hasBorder, onPressed,
 });
   @override
   Widget build(BuildContext context) {

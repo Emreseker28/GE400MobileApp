@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:ge400mobileapp/forum.dart';
 import 'package:ge400mobileapp/group.dart';
@@ -64,7 +65,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
             },
             child: Icon(Icons.exit_to_app)),
           label: 'Exit',
-         
+         //onPressed: () => FirebaseAuth.instance.signOut(),
         ),
       ],
       currentIndex: _selectedIndex,

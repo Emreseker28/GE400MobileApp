@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -29,6 +32,16 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.windows:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -36,20 +49,12 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDwuzTN6NqbElJG3rcpJvYV30fHTfAZBxY',
-    appId: '1:334067108952:web:01beb647def29caa008e2d',
-    messagingSenderId: '334067108952',
-    projectId: 'ge400-mobile-app',
-    authDomain: 'ge400-mobile-app.firebaseapp.com',
-    storageBucket: 'ge400-mobile-app.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAXENVEpU53O4G4BivxA_KH2LS6xwOZbe0',
     appId: '1:334067108952:android:83eca36f437cc30a008e2d',
     messagingSenderId: '334067108952',
     projectId: 'ge400-mobile-app',
+    databaseURL: 'https://ge400-mobile-app-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'ge400-mobile-app.appspot.com',
   );
 
@@ -58,6 +63,7 @@ class DefaultFirebaseOptions {
     appId: '1:334067108952:ios:37ec1fd13f2463af008e2d',
     messagingSenderId: '334067108952',
     projectId: 'ge400-mobile-app',
+    databaseURL: 'https://ge400-mobile-app-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'ge400-mobile-app.appspot.com',
     iosClientId: '334067108952-mg721aj2okqapsr89acokp7b5bejpi6m.apps.googleusercontent.com',
     iosBundleId: 'com.example.ge400mobileapp',

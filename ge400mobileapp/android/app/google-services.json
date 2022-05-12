@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "334067108952",
+    "firebase_url": "https://ge400-mobile-app-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "ge400-mobile-app",
     "storage_bucket": "ge400-mobile-app.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "334067108952-aubqc2efbq38d4v775kionbt13snhe90.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "334067108952-mg721aj2okqapsr89acokp7b5bejpi6m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ge400mobileapp"
+              }
             }
           ]
         }
