@@ -1,11 +1,17 @@
+import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:ge400mobileapp/HomePage.dart';
+import 'package:ge400mobileapp/fileUpload.dart';
 import 'package:ge400mobileapp/login.dart';
+import 'package:ge400mobileapp/widgets/button_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'api/firebase_api.dart';
 import 'firebase_options.dart';
 import 'navigator.dart';
+
 
 final navigatorKey = GlobalKey<NavigatorState>();
 void main() async{
@@ -33,10 +39,11 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: Login()),
+          home: fileUpload()),
     );
   }
 }
+
 class navigator extends StatelessWidget{
   @override
   Widget build(BuildContext context) => Scaffold(

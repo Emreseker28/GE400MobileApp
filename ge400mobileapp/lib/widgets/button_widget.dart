@@ -5,9 +5,11 @@ class ButtonWidget extends StatelessWidget {
   final bool? hasBorder;
 
   ButtonWidget({
+    Key? key,
     this.title,
-    this.hasBorder, onPressed,
-});
+    this.hasBorder,
+    onPressed,
+}): super(key: key);
   @override
   Widget build(BuildContext context) {
     return Material(
