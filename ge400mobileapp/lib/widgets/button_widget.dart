@@ -14,6 +14,7 @@ class ButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Ink(
+
         decoration: BoxDecoration(
           color: hasBorder! ? Colors.white : Colors.blue,
           borderRadius: BorderRadius.circular(10),
@@ -25,6 +26,7 @@ class ButtonWidget extends StatelessWidget {
               : Border.fromBorderSide(BorderSide.none),
         ),
       child: InkWell(
+        splashColor: Colors.white,
       borderRadius: BorderRadius.circular(10),
       child: Container(
       height: 60,

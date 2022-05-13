@@ -9,9 +9,11 @@ class TextFieldWidget extends StatefulWidget {
   final obscureText;
   final onChanged;
   final controller;
+  final validation;
   //final ValueChanged<String>? onChanged;
 
   TextFieldWidget({
+    this.validation,
     this.hintText,
     this.prefixIconData,
     this.suffixIconData,
@@ -32,14 +34,15 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
       Provider.of<HomePage>(context, listen: false).isVisible(isVisible);
     }
 
-    return TextField(
+    return TextFormField(
+      validator: widget.validation,
       controller: widget.controller,
       onChanged: widget.onChanged,
       obscureText: widget.hintText != "Password"
           ? false
           : isVisible == true
-              ? true
-              : false,
+          ? true
+          : false,
       style: TextStyle(
         color: Colors.blue,
         fontSize: 14,
@@ -71,13 +74,13 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           },
           child: widget.hintText != "Password"
               ? Icon(
-                  widget.suffixIconData,
-                  size: 18,
-                  color: Colors.blue,
-                )
+            widget.suffixIconData,
+            size: 18,
+            color: Colors.blue,
+          )
               : isVisible == false
-                  ? Icon(Icons.visibility)
-                  : Icon(Icons.visibility_off),
+              ? Icon(Icons.visibility)
+              : Icon(Icons.visibility_off),
         ),
         labelStyle: TextStyle(color: Colors.blue),
         focusColor: Colors.blue,

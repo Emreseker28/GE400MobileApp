@@ -5,6 +5,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
+
+import 'login.dart';
 class StorageScreen extends StatefulWidget {
   const StorageScreen({ Key? key }) : super(key: key);
 
@@ -13,7 +15,22 @@ class StorageScreen extends StatefulWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text("Khas Student Portal"),
+        actions: [
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
+            },
+            child: Padding(
+                padding: EdgeInsets.only(right: 10),
+                child: Icon(Icons.exit_to_app)),
+          )
+        ],
+        automaticallyImplyLeading: false,
+        centerTitle: true,
+        title: Text("KasdasdPortal"),
       ),
     );
   }
@@ -29,6 +46,19 @@ class _StorageScreenState extends State<StorageScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
+      actions: [
+        InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Login()),
+            );
+          },
+          child: Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: Icon(Icons.exit_to_app)),
+        )
+      ],
       automaticallyImplyLeading: false,
       centerTitle: true,
       title: const Text('KHAS Student Portal'),

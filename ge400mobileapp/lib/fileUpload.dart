@@ -6,6 +6,7 @@ import 'package:ge400mobileapp/widgets/fileUpload_button_widget.dart';
 import 'dart:io' as io;
 import 'package:path/path.dart';
 import 'api/firebase_api.dart';
+import 'login.dart';
 
 class fileUpload extends StatefulWidget {
   const fileUpload({ Key? key }) : super(key: key);
@@ -23,6 +24,19 @@ class _fileUploadState extends State<fileUpload> {
 
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
+            },
+            child: Padding(
+                padding: EdgeInsets.only(right: 10),
+                child: Icon(Icons.exit_to_app)),
+          )
+        ],
         title: const Text('KHAS Student Portal'),
         automaticallyImplyLeading: false,
         centerTitle: true,
