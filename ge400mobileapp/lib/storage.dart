@@ -30,7 +30,7 @@ class StorageScreen extends StatefulWidget {
         ],
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: Text("KasdasdPortal"),
+        title: Text("KHAS Student Portal"),
       ),
     );
   }

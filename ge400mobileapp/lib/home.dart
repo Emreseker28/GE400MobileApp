@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     //başlık kısmı
                       header: Text(
                         "For Associate Degree Students!",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 23),
                       ),
                       collapsed: Text(""),
                       expanded: Column(
@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           //detay kısmı
                           Text(
                             "Associate degree students, who have been dismissed due to the maximum duration due to the fact that they cannot be given the right to take the exam for the courses that have never been taken/continuation requirements have not been met, in accordance with the letters of the Council of Higher Education dated October 1, 2021, numbered -73154 and dated October 14, 2021, numbered -76443, if they apply to the Vocational School Directorate, they will be able to benefit from two additional examination rights until the end of the working day on Monday, January 31, 2022.",
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 20),
                             softWrap: true,
                           ),
                         ],
@@ -171,7 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     //başlık kısmı
                       header: Text(
                         "About Students Who Exceeded Maximum Time Limit",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 23),
                       ),
                       collapsed: Text(""),
                       expanded: Column(
@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           //detay kısmı
                           Text(
                             "Right to take two more additional exam is provided by the Article 44/c/(3) of Higher Education Law numbered 2547. Due to the related Law and Decision of Kadir Has University Senate dated 09.01.2019 and numbered 2019/01 , students who exceeded maximum time limit may use their additional exam right  by sending an email to justice@khas.edu.tr  until the end of office hours on 31.01.2022.",
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 20),
                             softWrap: true,
                           ),
                         ],
@@ -209,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     //başlık kısmı
                       header: Text(
                         "Active Scholarship Student Applications",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 23),
                       ),
                       collapsed: Text(""),
                       expanded: Column(
@@ -222,7 +222,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "Active Scholarship Student Applications will be received on Mykhas Portal between 13th-24th September. Applications will be evaluated by taking into account the demands and needs of the Academic / Administrative Units. The application results will be announced on the MyKhas Portal Notifications screen of each student in the second week of October."
                                 "The students whose applications cannot be evaluated with priority will be kept in the application pool and reviewed in case of new demands or needs of the units during the process."
                                 "If you have any questions about the process, you can contact Asli Bebek asli.bebek@khas.edu.tr / 1176(extension).",
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 20),
                             softWrap: true,
                           ),
                         ],
@@ -249,7 +249,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       //başlık kısmı
                       header: Text(
                         "2021 Summer Education Open Courses",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 23),
                       ),
                       collapsed: Text(""),
                       expanded: Column(
@@ -260,7 +260,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           //detay kısmı
                           Text(
                             "Right to take two more additional exam is provided by the Article 44/c/(3) of Higher Education Law numbered 2547. Due to the related Law and Decision of Kadir Has University Senate dated 09.01.2019 and numbered 2019/01 , students who exceeded maximum time limit may use their additional exam right  by sending an email to justice@khas.edu.tr  until the end of office hours on 31.01.2022.",
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 20),
                             softWrap: true,
                           ),
                         ],
