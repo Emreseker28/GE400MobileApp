@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       //başlık kısmı
                       header: Text(
                         "MA, PhD and Postdoctoral Fellowships in the ERC-funded project Staging National Abjection: Theatre and Politics in Turkey and Its Diasporas",
-                        style: TextStyle(fontSize: 23),
+                        style: TextStyle(fontSize: 23,),
                       ),
                       collapsed: Text(""),
                       expanded: Column(

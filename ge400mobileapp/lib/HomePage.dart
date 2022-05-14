@@ -19,7 +19,8 @@ class HomePage extends ChangeNotifier{
     return _isValid;
   }
   void isValidEmail(String input){
-    if(input == Global.validEmail.first){
+    List mail = input.split("@");
+    if(input ==  "${mail[0]}@stu.khas.edu.tr"){
       _isValid  = true;
     } else {
       _isValid = false;
